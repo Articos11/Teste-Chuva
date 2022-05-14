@@ -1,0 +1,364 @@
+/* CSS criado unicamente para controlar todo o conteúdo principal do site.  */
+
+@import './general.css';    
+
+
+/* Principal controlador da div que inclui todos os elementos até a parte de resumo, no HTML. */
+.main_section_one {
+    padding-top: 15px;
+}
+
+/* Div que controla principalmente o video e o título acima dele. */
+.section_one_upper_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Principal controlador do título do vídeo. */
+.main_video_title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: var(--font00);
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--cor02);
+    text-align: center;
+}
+
+/* Principal controlador do vídeo */
+.main_video { 
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+/* Principal controlador da DIV onde se encontram os botões.  */
+.section_one_downloads {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-bottom: 15px;
+}
+
+/* Controlador do botão de donwload. */
+.download_button {
+    border: 1px solid var(--cor01); 
+    border-radius: 3px;
+    background-color: var(--cor02);
+    padding: 5px 10px;
+    margin-right: 10px;
+
+    font-family: var(--font00);
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+/* Feito para controlar a imagem inserida dentro do botão de download. */
+.download_button > img {
+    padding-right: 10px;
+}
+
+/* FEito para controlar o botão de favoritar o arquivo, ao lado do botão de download.  */
+.favorite_button {
+    border: 1px solid var(--cor01);
+    border-radius: 3px;
+    background-color: var(--cor02);
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+/* Feito para controlar o botão DOI, que eu não sei o que significa a sigla.  */
+.doi_button {
+    border: 1px solid var(--cor01);
+    border-radius: 3px;
+    background-color: var(--cor02);
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+/* Feito para controlar o texto que fala como referênciar o trabalho.  */
+.refer { 
+    font-family: var(--font00);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor02);
+    text-align: center;
+    padding: 5px 0px 10px 0px; 
+}
+
+/* Principal controlador da div onde se encontram os detalhes das referências. */
+.details_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aqui contrala-se o background do título das referências.  */
+.details_container_title {
+    border: 1px solid #ececec;
+    width: 100%;
+    background-color: var(--cor03);
+    padding: 5px 0px;
+}
+
+/* Contrala-se a palavra DETALHES */
+.details_title {
+    font-family: var(--font00);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cor-t02);
+    text-align: center;
+}
+
+/* Principal controlador da DIV onde encontram-se as informações das referências.  */
+.details_container_information {
+    padding-top: 10px;
+    padding-left: 6px;
+
+}
+
+/* Principal controlador dos textos encontrados dentro da div anterior. */
+.text_info {
+    font-family: var(--font01);
+    color: var(--cor-t01);
+    font-size: 14px;
+}
+
+/* Para dar um destaque as informações, uma span foi criada unicamente para controlar detalhes de apresentação, temática, etc. */
+.text_info > span {
+    padding-left: 5px;
+    font-size: 16px;
+    color: var(--cor-t04);
+    font-weight: 600;
+}
+
+/* Uma div secundária foi criada para controlar informações unicamente sobre os autores. */
+.details_container_author {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Feito unicamente para controlar o nome "autores" acima dos nomes dos autores. */
+.author_title {
+    font-family: var(--font01);
+    font-size: 14px;
+    color: var(--cor-t04);
+    font-weight: 600;
+    font-size: 17px;
+    padding-bottom: 8px;
+}
+
+/* Feito para controlar os nomes dos autores. */
+.author_info {
+    font-family: var(--font01);
+    font-size: 14px;
+    color: var(--cor-t04);
+    padding-bottom: 5px;
+}
+/* Feito para escrever os nomes das faculdades de onde os autores vieram */
+.college_info {
+    font-family: var(--font00);
+    font-size: 15px;
+    padding-top: 5px;
+}
+/* Feito para controlar a posição de onde se encontra o resumo  */
+.briefing {
+    padding-top: 15px;
+}
+
+/* Feito para controlar o background e as dimensões de onde se encontra a palavra RESUMO */
+.briefing_title_container {
+    background-color: var(--cor03);
+    width: 100%;
+    height: auto;
+    padding: 5px 0px
+}
+
+/* Feito para controlar a palavra RESUMO */
+.briefing_title {
+    font-family:  var(--font00);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Feito para controlar o posicionamento e do texto de resumo. */
+.briefing_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Feito para controlar todo o texto de resumo. */
+.briefing_text p {
+    font-family: var(--font01);
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    line-height: 23px;
+
+}
+
+/* Abaixo uma tentiva de utilizar somente HTML e CSS para fazer um botão de ver mais, onde eu encontrei um impasse que não conseguia fazer o botão de VER MAIS desaparecer e dar lugar para um de VER MENOS. */
+#check {
+    display: none;
+}
+
+.hidden_content {
+    display: none;
+    transition: 0.5s linear;
+}
+
+
+.briefing_see {
+    font-family: var(--font01);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--cor02);
+}
+
+.briefing_less {
+    display: inline-block;
+    font-family: var(--font01);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--cor02);
+}
+
+
+#check:checked ~ .hidden_content {
+    display: block;
+}
+
+#check:checked ~ .briefing_see {
+    display: none;
+}
+
+
+@media screen and (min-width: 1023px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .main_section_one {
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+
+    }
+
+    .section_one_upper_div {
+        padding-left: 20px;
+        max-width: 550px;
+
+    }
+    
+    
+    .main_video_title{ 
+        padding: 0;
+        text-align: left;
+    }
+
+    .main_video {
+        min-height: 407px;
+    }
+
+    .container_downloads {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 222px;
+        position: absolute;
+        right: 7px;
+        top: 5px;
+    }
+
+    .section_one_downloads{
+        padding: 0;
+    }
+
+
+
+    .section_one_downloads {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .refer {
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    .details_container {
+        border: 2px solid #ececec;
+        width: 214px;
+        height: auto;
+        overflow: scroll;
+    }
+
+    .details_title {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .details_container_information {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    
+    .details_container_author {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .briefing {
+        margin: 10px;
+        margin-top: 127px;
+        border: 2px solid #ececec;
+        padding: 0;
+    }
+
+    .briefing_title {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .download_button, .doi_button, .favorite_button:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1819px) {
+    .section_one_upper_div {
+        max-width: 990px;
+    }
+
+    .main_video_title {
+        font-size: 19px;
+    }
+
+    .main_video {
+        height: auto;
+    }
+
+    .container_downloads {
+        right: 210px;
+    }
+}

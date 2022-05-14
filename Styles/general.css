@@ -1,0 +1,31 @@
+/* CSS usado para informações gerais, como cores, fontes, etc. */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* Variáveis de cores - Site */
+
+    --cor00: #FFB354;
+    --cor01: #EE7A3A; 
+    --cor02: #ED7839;
+    --cor03: #FDF1EB;
+
+
+    /* Váriveis de cores - Textos */
+    --cor-t00: #4d4d4d;
+    --cor-t01: #5C5C5C;
+    --cor-t02: #4E4E4E;
+    --cor-t03: #725C5C;
+    --cor-t04: #333333;
+    
+    /* Váriaveis de fontes */
+
+    --font00: 'Roboto', sans-serif; 
+    --font01: 'Quicksand', sans-serif;
+    
+}
+
+
+
+
+ 

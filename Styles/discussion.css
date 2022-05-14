@@ -1,0 +1,257 @@
+@import './general.css';
+
+
+/* Feito para controlar a posição de todo o container a partir de "discussões" */
+.discussion_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Feito para colocar o background atrás de "discussões" */
+.discussion_container_title {
+    background-color: var(--cor03);
+    width: 100%;
+    padding: 5px 0px;
+}
+
+/* Feito para controlar todos os aspectos da palavra "discussões" */
+.discussion_container_title h1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: var(--font00);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Feito para controlar a cor, posição e informações sobre o texto "compartilhe suas ideias [...]" */
+.discussion_share {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--font00);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--cor02);
+}
+
+/* Feito para controlar as três imagens na aba de discussões. */
+.discussion_imgs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Usado para que o espaçamento não afete o último item das imagens. */
+.discussion_icons:not(:last-child) {
+    padding-right: 13px;  
+
+}
+
+/* Feito para toda a div que contém o texto explicativo e o botão criar tópico. */
+.discussion_topic {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+/* Feito para controlar o texto explicativo sobre as discussões. */
+.discussion_topic h2 {
+    padding-bottom: 10px;
+    font-family: var(--font01);
+    font-size: 15px;
+
+}
+
+
+/* Feito para controlar o botão onde irá ser criado um novo tópico para a discussão */
+.discussion_topic button {
+    background: linear-gradient(180deg, #FEB254  0%, #F0813D 100%);
+    border: none; 
+    border-radius: 4px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: var(--font01);
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Feito unicamente para controlar o posicionamento do "+" inserido dentro do botão */
+.plus {
+    padding-top: 5px;
+    margin-right: 5px;
+
+}
+
+/* Feito para controlar a primeira div onde encontra-se a primeira pergunta da discussão */
+.discussion_question_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #ececec;
+    padding-bottom: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Feito para controlar individualmente o título da pergunta */
+.discussion_question_1 h1 {
+    font-family: var(--font01);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cor02);
+    padding-bottom: 5px;
+}
+
+/* Feito para controlar individualmente o nome do autor da pergunta */
+.discussion_question_1 h2 {
+    font-family: var(--font01);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor-t01);
+    padding-bottom: 5px;
+}
+
+/* Feito para controlar individualmente o conteúdo da pergunta */
+.discussion_question_1 p {
+    font-family: var(--font01);
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+/* Feito para controlar a posição dos botões abaixo do texto. */
+.discussion_answer1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Feito para controlar o espaçamento dos botões. */
+.discussion_answer1 button {
+    margin-right: 10px;
+}
+
+/* Feito para controlar a aparência do botão de reticências  */
+.discussion_info {
+    background: none;
+    border: none;
+}
+
+/* Feito para controlar a aparência do botão de like */
+.discussion_like {
+    background-color: #ED7839;
+    border: none;  
+}
+
+/* Feito para controlar a aparência e informações de quantidade de likes e respostas.  */
+.discussion_footer {
+    font-weight: 350;
+    padding-left: 8px;
+}
+
+/* A partir daqui repete-se a mesma ordem dos comentários anteriores. */
+
+.discussion_question_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #ececec;
+    padding-bottom: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.discussion_question_2 h1 {
+    font-family: var(--font01);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cor02);
+    padding-bottom: 5px;
+}
+
+.discussion_question_2 h2 {
+    font-family: var(--font01);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor-t01);
+    padding-bottom: 5px;
+}
+
+.discussion_question_2 p {
+    font-family: var(--font01);
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.discussion_answer2 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.discussion_answer2 button {
+    margin-right: 10px;
+}
+
+
+/* Feito para controlar a logo da Galoa com as informações pertinentes. */
+.galoa_logo {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 1023px) {
+    .discussion_container {
+        margin: 10px;
+        width: auto;
+        border: 2px solid #ececec;
+    }
+
+    .discussion_container_title > h1 {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .discussion_topic > button:hover {
+        cursor: pointer;
+    }
+
+    .discussion_question_1, .discussion_question_2 {
+        margin: 15px;
+        width: auto;
+    }
+
+    .discussion_question_1, .discussion_question_2 > h1, h2, p {
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+
+
+
+    .discussion_question_1, .discussion_question_2 {
+        align-items: flex-start;
+    }
+
+    .discussion_answer1, .discussion_answer2 {
+        padding-left: 5px;
+    }
+
+    .discussion_answer1, .discussion_answer2 > button:hover {
+        cursor: pointer;
+    }
+
+    .galoa_logo:hover {
+        cursor: pointer;
+    }
+}

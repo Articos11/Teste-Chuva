@@ -1,0 +1,279 @@
+/* CSS criado unicamente para controlar o Header do site. */
+
+@import './global.css';
+
+
+/* Para controlar a principal div da parte superior da tela. */
+.header_upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor03);
+
+}
+
+/* Feito para controlar a cor, tamanho e logo de onde se encontra palavra "SLACA 2019" */
+.header_title { 
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, var(--cor00) 0%, var(--cor01) 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feito para controlar a palavra SLACA 2019 */
+.header_title > h1 {
+    font-family: var(--font00);
+    font-weight: 700;
+    font-size: 29px;
+    color: white;
+    width: auto;
+    height: auto;
+}
+
+
+/* Feito para controlar a div onde se encontram os três textos sobre os Anais do Simpósio. */
+.header_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+/* Feito para controlar isoladamente o primeiro texto citado no comentário anterior. */
+.header_info_upper {
+    font-family: var(--font01);
+    font-size: 12px;
+    height: auto;
+    color: var(--cor-t03);    
+}
+
+/* Feito para controlar isoladamente o segundo texto citado na div anterior. */
+.header_info_middle {
+    padding-top: 7px;
+    font-family: var(--font01);
+    font-size: 15px;
+    height: auto;
+    color: var(--cor-t03);
+}
+/* Feito para controlar isoladamente o terceiro texto citado na div anterior. */
+.header_info_bottom {
+    padding-top: 7px;
+    font-family: var(--font01);
+    font-size: 12px;
+    height: auto;
+    color: var(--cor-t03);
+}
+
+
+/* Feito para controlar a posição do seletor de linguagens.  */
+.language_select {
+    display: flex;
+    position: relative;
+    right: 140px;
+    top: 35px;
+}
+
+/* Feito para controlar o interior do seletor de linguagens, adicionando imagem, posição do texto, etc.  */
+#language_select {
+    background-image: url(../Assets/globe.png);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: 25px;
+    padding-left: 22px;
+    padding-top: 3px;
+    height: 35px;
+    background-color: var(--cor03);
+    border: none;
+    font-family: var(--font01);
+}
+
+/* Feito para controlar a posição das informações do usuário. */
+.user_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 88px;
+    bottom: 5px;
+}
+
+/* Feito para controlar a palavra "Bem Vindo!" na div. */
+.user_welcome {
+    font-family: var(--font01);
+    text-align: right;
+    font-size: 15px;
+}
+
+
+/* Feito para controlar o email do usuário na div. */
+.user_email {
+    font-family: var(--font01);
+    font-size: 12px;
+}
+
+/* Feito para controlar o ícone do usuário na div. */
+.user_icon {
+    width: 25px;
+    height: auto;
+    position: relative;
+    left: 140px;
+}
+
+/* Feito para controlar a div com todo o conteúdo extra do header, como o logo da SLACA e os botões de trocar de página. */
+.aside_select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 17px -1px rgb(0, 0, 0, 0.25);
+
+}
+
+/* Feito para controlar o tamanho do logo da SLACA. */
+.slaca_logo {
+    width: 110px;
+    height: 50%;
+} 
+
+/* Feito para controlar o tamanho e ajuste da lista com os botões abaixo do logo da SLACA. */
+.slaca_logo_list {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Feito para controlar o tamanho, fonte e cores dos botões abaixo do logo da SLACA */
+.slaca_list {
+    width: 100%;
+    display: inline;
+    padding: 1rem;
+    padding-right: 15px;
+    
+    font-family: var(--font01);
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 1023px) {
+
+    .header_upper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: var(--cor03);
+    
+    }
+    
+    .header_title { 
+        width: 220px;
+        height: 80px;
+        background: linear-gradient(180deg, var(--cor00) 0%, var(--cor01) 100%);
+    }
+
+    .header_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 10px 0px 10px
+    
+    }
+
+    .language_select {
+        display: flex;
+        position: relative;
+        left: 28px;
+        top: 14px;
+    }
+
+    #language_select { 
+        border: 1px solid;
+        padding-bottom: 1px;
+    }
+
+    .user_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 64px;
+        top: 8px;
+    }
+
+    .aside_select {
+        height: auto;
+        z-index: 1;
+        max-width: 220px;
+        box-shadow: 5px 0px 17px -1px rgb(0, 0, 0, 0.25);
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .slaca_logo { 
+        width: 100%;
+        height: auto;
+    }
+
+    .slaca_logo_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        text-align: start;
+    }
+
+    .slaca_list {
+        display: block;
+        text-align: left;
+        width: 191px;        
+        border-bottom: 1px solid rgb(214, 194, 194);
+
+    }
+
+    .slaca_list:hover {
+        background-color: var(--cor03);
+        cursor: pointer;
+        border-left: 10px solid var(--cor02);
+   
+    }
+}
+
+@media screen and (min-width: 1919px) {
+    
+    .header_title { 
+        height: 93px;
+    }
+
+    .language_select {
+        display: flex;
+        position: relative;
+        left: 831px;
+        top: 14px;
+    }
+
+    .user_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 860px;
+        top: 23px;
+    }
+
+    .user_icon {
+            width: 37px;
+            height: auto;
+            position: relative;
+            left: 175px;
+            bottom: 33px;
+    }
+
+}
+
